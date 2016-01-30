@@ -50,6 +50,10 @@ treeherder.directive(
                     scope.hasNoResults = _.isEmpty(scope.filteredResultList);
                 }
 
+                scope.getTestAnchor = function(compareResults) {
+                    return "test-" + compareResults.testName.replace(/\W/g, '-');
+                };
+
                 scope.$watchGroup(['frameworkId', 'filter', 'showOnlyImportant', 'showOnlyConfident'],
                                   function() {
                                       updateFilteredTestList();

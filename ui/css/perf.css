@@ -284,7 +284,8 @@ to { opacity: 0; }
 }
 
 .compare-table .result-links span,
-.compare-table .result-links a {
+.compare-table .result-links a,
+.compare-table .headerlink {
     color: transparent;
     transition: color 150ms ease-in-out;
 }
@@ -293,7 +294,8 @@ to { opacity: 0; }
     color: #333;
 }
 
-.compare-table tr:hover .result-links a {
+.compare-table tr:hover .result-links a,
+.compare-table tr:hover .headerlink {
     color: #23527c;
 }
 

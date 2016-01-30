@@ -2,7 +2,7 @@
   <tbody>
     <tr class="subtest-header">
       <!-- Manually specify table widths because it's just easier this way -->
-      <th class="test-title"><span style=" word-wrap: break-word;">{{titles[compareResults.testName]}}</span></th>
+      <th class="test-title"><span style=" word-wrap: break-word;" id="{{getTestAnchor(compareResults)}}">{{titles[compareResults.testName]}}</span>&nbsp;&nbsp;<a class="headerlink" ui-sref="{'#': getTestAnchor(compareResults)}" title="Permalink to this result">¶</a></th>
       <th style="width: 140px;">Base</th>
       <th style="width: 30px;"><!-- less than / greater than --></th>
       <th style="width: 140px;">New</th>
